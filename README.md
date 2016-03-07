@@ -21,8 +21,12 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
      \____/           \/    \/            \__/
 </pre>
 
-### Pdf Creator ###
+## Pdf Creator ##
 
 Create PDF from HTML content.
 
 [CMSUno](https://github.com/boiteasite/cmsuno)
+
+### Versions ###
+
+* 1.0 - 07/03/2016 : First stable version
