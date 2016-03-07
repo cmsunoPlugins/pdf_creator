@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CmsUno\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-07 11:36+0100\n"
+"PO-Revision-Date: 2016-03-07 11:36+0100\n"
+"Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-\tmsgstr-Bugs-To: \n"
+"Report-\t\tmsgstr-Bugs-To: \n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../pdf_creator.php:18
+#: ../../../pdf_creator.php:175
+#: ../../../pdf_creator.php:208
+msgid "Send"
+msgstr "Envoyer"
+
+#: ../../../pdf_creator.php:19
+msgid "Config"
+msgstr "Configuration"
+
+#: ../../../pdf_creator.php:20
+msgid "Creation"
+msgstr "Création"
+
+#: ../../../pdf_creator.php:23
+msgid "This plugin allows you to create PDF files from the HTML Editor. Output will be directly in the file manager."
+msgstr "Ce plugin permet de créer des fichiers PDF à partir du contenu de l'éditeur HTML. Le PDF sera directement accessible dans le gestionnaire de fichiers."
+
+#: ../../../pdf_creator.php:24
+msgid "You can insert small text content (name, date...) in the 3 part of the page (head, content and footer) by adding the shortcode [[name-of-the-small-content]] at the right place."
+msgstr "Vous pouvez ajouter de petits bouts de contenu (nom, date...) dans les 3 parties du document (en-tête, contenu, pied) en ajoutant le shortcode [[nom-du-contenu]] à l'emplacement désiré."
+
+#: ../../../pdf_creator.php:25
+msgid "This plugin is not active in the site creation."
+msgstr "Ce plugin ne participe pas à la création du site."
+
+#: ../../../pdf_creator.php:26
+msgid "Creation :"
+msgstr "Création :"
+
+#: ../../../pdf_creator.php:29
+msgid "Existing files"
+msgstr "Fichiers existants"
+
+#: ../../../pdf_creator.php:33
+msgid "Open"
+msgstr "Ouvrir"
+
+#: ../../../pdf_creator.php:37
+#: ../../../pdf_creator.php:40
+msgid "Create new file"
+msgstr "Créer un nouveau fichier"
+
+#: ../../../pdf_creator.php:40
+msgid "Create"
+msgstr "Créer"
+
+#: ../../../pdf_creator.php:44
+msgid "Name of the field"
+msgstr "Nom du champ"
+
+#: ../../../pdf_creator.php:47
+msgid "Add the field"
+msgstr "Ajoute le champ"
+
+#: ../../../pdf_creator.php:47
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../../../pdf_creator.php:51
+msgid "Existing fields :"
+msgstr "Champs existants :"
+
+#: ../../../pdf_creator.php:55
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../../../pdf_creator.php:56
+#: ../../../pdf_creator.php:170
+msgid "Save settings"
+msgstr "Enregistre le contenu"
+
+#: ../../../pdf_creator.php:56
+#: ../../../pdf_creator.php:170
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../../../pdf_creator.php:59
+#: ../../../pdf_creator.php:185
+msgid "File name add"
+msgstr "Complément au nom de fichier"
+
+#: ../../../pdf_creator.php:61
+msgid "Create PDF"
+msgstr "Créer le PDF"
+
+#: ../../../pdf_creator.php:66
+msgid "Options"
+msgstr "Options"
+
+#: ../../../pdf_creator.php:69
+msgid "Size"
+msgstr "Dimensions"
+
+#: ../../../pdf_creator.php:72
+#: ../../../pdf_creator.php:102
+#: ../../../pdf_creator.php:113
+msgid "Default"
+msgstr "Défaut"
+
+#: ../../../pdf_creator.php:86
+msgid "Output Page Size."
+msgstr "Taille de la page."
+
+#: ../../../pdf_creator.php:89
+msgid "Format"
+msgstr "Format"
+
+#: ../../../pdf_creator.php:92
+msgid "Portrait"
+msgstr "Portrait"
+
+#: ../../../pdf_creator.php:93
+msgid "Landscape"
+msgstr "Paysage"
+
+#: ../../../pdf_creator.php:96
+msgid "Output Page Format : Portrait or Landscape."
+msgstr "Format de la page : portrait ou paysage."
+
+#: ../../../pdf_creator.php:99
+#: ../../../pdf_creator.php:107
+msgid "Font Family"
+msgstr "Police de caractère"
+
+#: ../../../pdf_creator.php:110
+#: ../../../pdf_creator.php:125
+msgid "Font Size"
+msgstr "Taille de la police"
+
+#: ../../../pdf_creator.php:128
+msgid "Margin left"
+msgstr "Marge gauche"
+
+#: ../../../pdf_creator.php:132
+#: ../../../pdf_creator.php:139
+#: ../../../pdf_creator.php:146
+#: ../../../pdf_creator.php:153
+#: ../../../pdf_creator.php:160
+#: ../../../pdf_creator.php:167
+msgid "Empty => default"
+msgstr "Vide => Valeur par défaut"
+
+#: ../../../pdf_creator.php:135
+msgid "Margin right"
+msgstr "Marge droite"
+
+#: ../../../pdf_creator.php:142
+msgid "Margin top"
+msgstr "Marge haute"
+
+#: ../../../pdf_creator.php:149
+msgid "Margin bottom"
+msgstr "Marge basse"
+
+#: ../../../pdf_creator.php:156
+msgid "Margin head"
+msgstr "Marge en-tête"
+
+#: ../../../pdf_creator.php:163
+msgid "Margin foot"
+msgstr "Marge pied de page"
+
+#: ../../../pdf_creator.php:174
+msgid "Send the PDF created to an email address. They should have the same file name add."
+msgstr "Envoyer le(s) PDF vers une adresse email. Le(s) PDF devront avoir le même complément de nom."
+
+#: ../../../pdf_creator.php:178
+msgid "Email"
+msgstr "Email"
+
+#: ../../../pdf_creator.php:182
+msgid "Recipient's email address"
+msgstr "Adresse email du destinataire"
+
+#: ../../../pdf_creator.php:188
+msgid "Check"
+msgstr "Vérifier"
+
+#: ../../../pdf_creator.php:191
+msgid "The PDF will be selected with this add to the file name"
+msgstr "Le(s) PDF seront sélectionnés s'ils possèdent ce complément au nom"
+
+#: ../../../pdf_creator.php:194
+msgid "Email subject"
+msgstr "Sujet du email"
+
+#: ../../../pdf_creator.php:198
+msgid "Subject for the email"
+msgstr "Sujet pour le email"
+
+#: ../../../pdf_creator.php:201
+msgid "Email content"
+msgstr "Contenu du email"
+
+#: ../../../pdf_creator.php:205
+msgid "Content for the email"
+msgstr "Contenu du email"
+
+#: ../../../pdf_creator.php:246
+msgid "New"
+msgstr "Nouveau"
+
+#: ../../../pdf_creator.php:253
+#: ../../../pdf_creator.php:358
+#: ../../../pdf_creator.php:360
+#: ../../../pdf_creator.php:376
+msgid "Error"
+msgstr "Erreur"
+
+#: ../../../pdf_creator.php:274
+#: ../../../pdf_creator.php:284
+msgid "Backup performed"
+msgstr "Sauvegarde effectu&eacute;e"
+
+#: ../../../pdf_creator.php:275
+#: ../../../pdf_creator.php:285
+msgid "Impossible backup"
+msgstr "Sauvegarde impossible"
+
+#: ../../../pdf_creator.php:331
+msgid "Email sent to"
+msgstr "Email envoyé à"
+
+#: ../../../pdf_creator.php:354
+msgid "Email sent"
+msgstr "Email envoyé"
+
+#: ../../../pdf_creator.php:355
+msgid "Failed to send"
+msgstr "Echec de l'envoi"
+
+#: ../../../pdf_creator.php:370
+msgid "PDF files"
+msgstr "Fichiers PDF"
+
+#: ../../../pdf_creator.php:371
+msgid "No result"
+msgstr "Pas de résultat"
+
+#: ../../../pdf_creator.php:375
+msgid "Deleted"
+msgstr "Supprimé"
+
+#: ../../../pdf_creator.php:450
+msgid "PDF Created"
+msgstr "PDF Créé"
+
+#: ../../../pdf_creator.php:451
+msgid "Impossible"
+msgstr "Sauvegarde impossible"
+
+#: ../../../pdf_creator.php:454
+msgid "no data"
+msgstr "Pas de données"
+
+#~ msgid "Open existing"
+#~ msgstr "Fichiers existants"
+
+#~ msgid "Box"
+#~ msgstr "Box"
+
+#~ msgid ""
+#~ "This plugin allows you to add small blocks of content. For example: a "
+#~ "date, an address, a phone number."
+#~ msgstr ""
+#~ "Ce plugin permet d'ajouter des petits blocs de contenu. Par exemple : une "
+#~ "date, une adresse, un numéro de téléphone."
+
+#~ msgid ""
+#~ "It can also add a big HTML content as a sidebar or something else. For "
+#~ "this you should choose HTML editor."
+#~ msgstr ""
+#~ "Vous pouvez également ajouter un gros bloc HTML comme une barre laterale "
+#~ "ou autres. Choisissez alors l'Editeur HTML."
+
+#~ msgid "Just insert the code"
+#~ msgstr "Il suffit d'ins&eacute;rer le code"
+
+#~ msgid "nameofthebox"
+#~ msgstr "nomdubloc"
+
+#~ msgid "in the template or in the page content."
+#~ msgstr "dans le template ou dans le contenu de la page."
+
+#~ msgid "You can create as many box as you need."
+#~ msgstr "Vous pouvez créer autant de blocs que nécessaires."
+
+#~ msgid "Add a box :"
+#~ msgstr "Ajouter un bloc :"
+
+#~ msgid "Plain text"
+#~ msgstr "Texte brut"
+
+#~ msgid "HTML Editor"
+#~ msgstr "Editeur HTML"
