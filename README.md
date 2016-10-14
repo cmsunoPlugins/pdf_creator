@@ -23,10 +23,13 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
 
 ## Pdf Creator ##
 
-Create PDF from HTML content.
+Create PDF from CKEditor content. Custom Shortcode (name, phone...) to save time. Numerous options (page format, font, margin...). Very Usefull.
+
+Use [Mpdf](http://www.mpdf1.com/mpdf/index.php)
 
 [CMSUno](https://github.com/boiteasite/cmsuno)
 
 ### Versions ###
 
+* 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext
 * 1.0 - 07/03/2016 : First stable version

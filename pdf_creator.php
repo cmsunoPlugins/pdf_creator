@@ -15,61 +15,61 @@ if (isset($_POST['action']))
 		// ********************************************************************************************
 		case 'plugin': ?>
 		<div class="blocForm">
-			<div id="pdfcC" class="bouton fr" onClick="f_pdfcC();" title="<?php echo _("Send");?>"><?php echo _("Send");?></div>
-			<div id="pdfcB" class="bouton fr" onClick="f_pdfcB();" title="<?php echo _("Config");?>"><?php echo _("Config");?></div>
-			<div id="pdfcA" class="bouton fr current" onClick="f_pdfcA();" title="<?php echo _("Creation");?>"><?php echo _("Creation");?></div>
+			<div id="pdfcC" class="bouton fr" onClick="f_pdfcC();" title="<?php echo T_("Send");?>"><?php echo T_("Send");?></div>
+			<div id="pdfcB" class="bouton fr" onClick="f_pdfcB();" title="<?php echo T_("Config");?>"><?php echo T_("Config");?></div>
+			<div id="pdfcA" class="bouton fr current" onClick="f_pdfcA();" title="<?php echo T_("Creation");?>"><?php echo T_("Creation");?></div>
 			<h2>PDF Creator</h2>
 			<div id="pdfcBlocA">
-				<p><?php echo _("This plugin allows you to create PDF files from the HTML Editor. Output will be directly in the file manager.");?></p>
-				<p><?php echo _("You can insert small text content (name, date...) in the 3 part of the page (head, content and footer) by adding the shortcode [[name-of-the-small-content]] at the right place.");?></p>
-				<p><?php echo _("This plugin is not active in the site creation.");?></p>
-				<h3><?php echo _("Creation :");?></h3>
+				<p><?php echo T_("This plugin allows you to create PDF files from the HTML Editor. Output will be directly in the file manager.");?></p>
+				<p><?php echo T_("You can insert small text content (name, date...) in the 3 part of the page (head, content and footer) by adding the shortcode [[name-of-the-small-content]] at the right place.");?></p>
+				<p><?php echo T_("This plugin is not active in the site creation.");?></p>
+				<h3><?php echo T_("Creation :");?></h3>
 				<table class="hForm">
 					<tr>
-						<td><label><?php echo _("Existing files");?></label></td>
+						<td><label><?php echo T_("Existing files");?></label></td>
 						<td>
 							<select name="pdfcOpen" id="pdfcOpen">
 							</select>
-							<div class="bouton" style="margin:0;" onClick="f_load_pdfc(document.getElementById('pdfcOpen').options[document.getElementById('pdfcOpen').selectedIndex].value)" title="<?php echo _("Open");?>"><?php echo _("Open");?></div>
+							<div class="bouton" style="margin:0;" onClick="f_load_pdfc(document.getElementById('pdfcOpen').options[document.getElementById('pdfcOpen').selectedIndex].value)" title="<?php echo T_("Open");?>"><?php echo T_("Open");?></div>
 						</td>
 					</tr>
 					<tr id="pdfcCreate">
-						<td><label><?php echo _("Create new file");?></label></td>
+						<td><label><?php echo T_("Create new file");?></label></td>
 						<td>
 							<input class="input" type="text" class="input" name="pdfcFile" id="pdfcFile" style="width:80px;margin-right:20px;" value="" />
-							<div class="bouton" style="margin:0;" onClick="f_create_pdfc(document.getElementById('pdfcFile').value);" title="<?php echo _("Create new file");?>"><?php echo _("Create");?></div>
+							<div class="bouton" style="margin:0;" onClick="f_create_pdfc(document.getElementById('pdfcFile').value);" title="<?php echo T_("Create new file");?>"><?php echo T_("Create");?></div>
 						</td>
 					</tr>
 					<tr id="pdfcAdd">
-						<td><label><?php echo _("Name of the field");?></label></td>
+						<td><label><?php echo T_("Name of the field");?></label></td>
 						<td>
 							<input class="input" type="text" class="input" name="pdfcName" id="pdfcName" style="width:80px;margin-right:20px;" value="" />
-							<div class="bouton" style="margin:0;" onClick="f_add_pdfc(document.getElementById('pdfcName').value);" title="<?php echo _("Add the field");?>"><?php echo _("Add");?></div>
+							<div class="bouton" style="margin:0;" onClick="f_add_pdfc(document.getElementById('pdfcName').value);" title="<?php echo T_("Add the field");?>"><?php echo T_("Add");?></div>
 						</td>
 					</tr>
 				</table>
-				<h3><?php echo _("Existing fields :");?></h3>
+				<h3><?php echo T_("Existing fields :");?></h3>
 				<form id="frmPdfc">
 					<table id="curPdfc"></table>
 				</form>
-				<div class="bouton fr" onClick="f_delete_pdfc(document.getElementById('pdfcActif').value);" title="<?php echo _("Delete");?>"><?php echo _("Delete");?></div>
-				<div class="bouton fr" onClick="f_save_pdfc();" title="<?php echo _("Save settings");?>"><?php echo _("Save");?></div>
+				<div class="bouton fr" onClick="f_delete_pdfc(document.getElementById('pdfcActif').value);" title="<?php echo T_("Delete");?>"><?php echo T_("Delete");?></div>
+				<div class="bouton fr" onClick="f_save_pdfc();" title="<?php echo T_("Save settings");?>"><?php echo T_("Save");?></div>
 				<div class="clear"></div>
 				<div class="fr">
-					<label><?php echo _("File name add");?> :</label>
+					<label><?php echo T_("File name add");?> :</label>
 					<input class="input" type="text" class="input" name="pdfcFileName" id="pdfcFileName" style="width:80px;margin-right:20px;" value="" />
-					<div class="bouton" onClick="f_makepdf_pdfc(document.getElementById('pdfcActif').value,document.getElementById('pdfcFileName').value);" title="<?php echo _("Create PDF");?>"><?php echo _("Create PDF");?></div>
+					<div class="bouton" onClick="f_makepdf_pdfc(document.getElementById('pdfcActif').value,document.getElementById('pdfcFileName').value);" title="<?php echo T_("Create PDF");?>"><?php echo T_("Create PDF");?></div>
 				</div>
 				<div class="clear"></div>
 			</div>
 			<div id="pdfcBlocB" style="display:none;">
-				<h3><?php echo _("Options");?>&nbsp;:</h3>
+				<h3><?php echo T_("Options");?>&nbsp;:</h3>
 				<table class="hForm">
 					<tr>
-						<td><label><?php echo _("Size");?></label></td>
+						<td><label><?php echo T_("Size");?></label></td>
 						<td>
 							<select name="pdfcPage" id="pdfcPage">
-								<option value="210,297">A4 <?php echo _("Default");?></option>
+								<option value="210,297">A4 <?php echo T_("Default");?></option>
 								<option value="594,841">A1</option>
 								<option value="420,594">A2</option>
 								<option value="297,420">A3</option>
@@ -83,23 +83,23 @@ if (isset($_POST['action']))
 								<option value="125,176">B6</option>
 							</select>
 						</td>
-						<td><em><?php echo _("Output Page Size.");?></em></td>
+						<td><em><?php echo T_("Output Page Size.");?></em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Format");?></label></td>
+						<td><label><?php echo T_("Format");?></label></td>
 						<td>
 							<select name="pdfcFormat" id="pdfcFormat">
-								<option value="P"><?php echo _("Portrait");?></option>
-								<option value="L"><?php echo _("Landscape");?></option>
+								<option value="P"><?php echo T_("Portrait");?></option>
+								<option value="L"><?php echo T_("Landscape");?></option>
 							</select>
 						</td>
-						<td><em><?php echo _("Output Page Format : Portrait or Landscape.");?></em></td>
+						<td><em><?php echo T_("Output Page Format : Portrait or Landscape.");?></em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Font Family");?></label></td>
+						<td><label><?php echo T_("Font Family");?></label></td>
 						<td>
 							<select name="pdfcFont" id="pdfcFont">
-								<option value="dejavuserif">DejaVu Serif (<?php echo _("Default");?>)</option>
+								<option value="dejavuserif">DejaVu Serif (<?php echo T_("Default");?>)</option>
 								<option value="dejavusans">DejaVu Sans-Serif</option>
 								<option value="dejavusanscondensed">DejaVu Sans-Serif Condensed</option>
 								<option value="dejavusansmono">DejaVu Mono</option>
@@ -109,13 +109,13 @@ if (isset($_POST['action']))
 								<option value="garuda">Garuda Sans-Serif</option>
 							</select>
 						</td>
-						<td><em><?php echo _("Font Family");?>.</em></td>
+						<td><em><?php echo T_("Font Family");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Font Size");?></label></td>
+						<td><label><?php echo T_("Font Size");?></label></td>
 						<td>
 							<select name="pdfcSize" id="pdfcSize">
-								<option value=""><?php echo _("Default");?></option>
+								<option value=""><?php echo T_("Default");?></option>
 								<option value="8">8 pt</option>
 								<option value="9">9 pt</option>
 								<option value="10">10 pt</option>
@@ -127,90 +127,90 @@ if (isset($_POST['action']))
 								<option value="16">16 pt</option>
 							</select>
 						</td>
-						<td><em><?php echo _("Font Size");?>.</em></td>
+						<td><em><?php echo T_("Font Size");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin left");?></label></td>
+						<td><label><?php echo T_("Margin left");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMargleft" id="pdfcMargleft" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin right");?></label></td>
+						<td><label><?php echo T_("Margin right");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMargright" id="pdfcMargright" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin top");?></label></td>
+						<td><label><?php echo T_("Margin top");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMargtop" id="pdfcMargtop" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin bottom");?></label></td>
+						<td><label><?php echo T_("Margin bottom");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMargbottom" id="pdfcMargbottom" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin head");?></label></td>
+						<td><label><?php echo T_("Margin head");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMarghead" id="pdfcMarghead" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Margin foot");?></label></td>
+						<td><label><?php echo T_("Margin foot");?></label></td>
 						<td>
 							<input class="input" style="width:50px;" type="text" name="pdfcMargfoot" id="pdfcMargfoot" />
 						</td>
-						<td><em><?php echo _("Empty => default");?>.</em></td>
+						<td><em><?php echo T_("Empty => default");?>.</em></td>
 					</tr>
 				</table>
-				<div class="bouton fr" onClick="f_config_pdfc();" title="<?php echo _("Save settings");?>"><?php echo _("Save");?></div>
+				<div class="bouton fr" onClick="f_config_pdfc();" title="<?php echo T_("Save settings");?>"><?php echo T_("Save");?></div>
 				<div class="clear"></div>
 			</div>
 			<div id="pdfcBlocC" style="display:none;">
-				<p><?php echo _("Send the PDF created to an email address. They should have the same file name add.");?></p>
-				<h3><?php echo _("Send");?>&nbsp;:</h3>
+				<p><?php echo T_("Send the PDF created to an email address. They should have the same file name add.");?></p>
+				<h3><?php echo T_("Send");?>&nbsp;:</h3>
 				<table class="hForm">
 					<tr>
-						<td><label><?php echo _("Email");?></label></td>
+						<td><label><?php echo T_("Email");?></label></td>
 						<td>
 							<input class="input" style="width:250px;" type="text" name="pdfcEmail" id="pdfcEmail" />
 						</td>
-						<td><em><?php echo _("Recipient's email address");?>.</em></td>
+						<td><em><?php echo T_("Recipient's email address");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("File name add");?></label></td>
+						<td><label><?php echo T_("File name add");?></label></td>
 						<td>
 							<input class="input" style="width:100px;" type="text" name="pdfcComp" id="pdfcComp" />
-							<div class="bouton" onClick="f_check_pdfc();" title="<?php echo _("Check");?>"><?php echo _("Check");?></div>
+							<div class="bouton" onClick="f_check_pdfc();" title="<?php echo T_("Check");?>"><?php echo T_("Check");?></div>
 							<span id="pdfcCheck"></span>
 						</td>
-						<td><em><?php echo _("The PDF will be selected with this add to the file name");?>.</em></td>
+						<td><em><?php echo T_("The PDF will be selected with this add to the file name");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Email subject");?></label></td>
+						<td><label><?php echo T_("Email subject");?></label></td>
 						<td>
 							<input class="input" style="width:250px;" type="text" name="pdfcSubjmail" id="pdfcSubjmail" />
 						</td>
-						<td><em><?php echo _("Subject for the email");?>.</em></td>
+						<td><em><?php echo T_("Subject for the email");?>.</em></td>
 					</tr>
 					<tr>
-						<td><label><?php echo _("Email content");?></label></td>
+						<td><label><?php echo T_("Email content");?></label></td>
 						<td>
 							<textarea style="width:250px;height:100px;" name="pdfcContmail" id="pdfcContmail">bla</textarea>
 						</td>
-						<td><em><?php echo _("Content for the email");?>.</em></td>
+						<td><em><?php echo T_("Content for the email");?>.</em></td>
 					</tr>
 				</table>
-				<div class="bouton fr" onClick="f_send_pdfc();" title="<?php echo _("Send");?>"><?php echo _("Send");?></div>
+				<div class="bouton fr" onClick="f_send_pdfc();" title="<?php echo T_("Send");?>"><?php echo T_("Send");?></div>
 				<div class="clear"></div>
 			</div>
 		</div>
@@ -248,14 +248,14 @@ if (isset($_POST['action']))
 				}
 			closedir($h);
 			$a['nom'] = (($c && $c!=1)?$c:$n);
-			$a['nouv'] = _("New");
+			$a['nouv'] = T_("New");
 			if(isset($b['config'])) $a['config'] = $b['config'];
 			if(isset($b['subjmail'])) $a['subjmail'] = $b['subjmail'];
 			if(isset($b['contmail'])) $a['contmail'] = $b['contmail'];
 			echo json_encode($a);
 			exit;
 			}
-		echo '!'._('Error');
+		echo '!'.T_('Error');
 		break;
 		// ********************************************************************************************
 		case 'save':
@@ -276,8 +276,8 @@ if (isset($_POST['action']))
 		$out = json_encode($a);
 		$b['nom'] = $n;
 		$out1 = json_encode($b);
-		if($n && file_put_contents('../../data/_pdf_creator/'.$n.'.json', $out) && file_put_contents('../../data/pdf_creator.json', $out1)) echo _('Backup performed');
-		else echo '!'._('Impossible backup');
+		if($n && file_put_contents('../../data/_pdf_creator/'.$n.'.json', $out) && file_put_contents('../../data/pdf_creator.json', $out1)) echo T_('Backup performed');
+		else echo '!'.T_('Impossible backup');
 		break;
 		// ********************************************************************************************
 		case 'config':
@@ -286,8 +286,8 @@ if (isset($_POST['action']))
 		if($q) $a = json_decode($q,true);
 		foreach($_POST as $k=>$v) if($k!='action' && $k!='unox') $a['config'][$k] = $v;
 		$out = json_encode($a);
-		if(file_put_contents('../../data/pdf_creator.json', $out)) echo _('Backup performed');
-		else echo '!'._('Impossible backup');
+		if(file_put_contents('../../data/pdf_creator.json', $out)) echo T_('Backup performed');
+		else echo '!'.T_('Impossible backup');
 		break;
 		// ********************************************************************************************
 		case 'send':
@@ -333,7 +333,7 @@ if (isset($_POST['action']))
 			if($c && $mail)
 				{
 				include ('../../template/mailTemplate.php');
-				$dest = '<em>'._('Email sent to').' : '.$_POST['mail'].' - '.date("d.m.Y").'</em>';
+				$dest = '<em>'.T_('Email sent to').' : '.$_POST['mail'].' - '.date("d.m.Y").'</em>';
 				$bottom= str_replace('[[unsubscribe]]',$dest, $bottom); // template
 				$msgT = stripslashes($_POST['cont']);
 				$msgH = $top . nl2br(stripslashes($_POST['cont'])) . $bottom;
@@ -356,13 +356,13 @@ if (isset($_POST['action']))
 					$content .= $rn.$r['attach'].$rn;
 					}
 				$content .= $rn."--".$uid."--";
-				if(mail(stripslashes($_POST['mail']), stripslashes($_POST['subj']), $content, $header)) echo _('Email sent');
-				else echo _('Failed to send');
+				if(mail(stripslashes($_POST['mail']), stripslashes($_POST['subj']), $content, $header)) echo T_('Email sent');
+				else echo T_('Failed to send');
 				mail($mail, 'Admin - '.stripslashes($_POST['subj']), $content, $header);
 				}
-			else echo '!'._('Error');
+			else echo '!'.T_('Error');
 			}
-		else echo '!'._('Error');
+		else echo '!'.T_('Error');
 		break;
 		// ********************************************************************************************
 		case 'check':
@@ -372,13 +372,14 @@ if (isset($_POST['action']))
 			{
 			if(is_file('../../../files/'.$d) && strpos($d,'_'.$_POST['comp'].'.pdf')) ++$c;
 			}
-		if($c) echo '<em style="color:green">'.$c.' '._('PDF files').'</em>';
-		else echo '<em style="color:red">'._('No result').'</em>';
+		closedir($h);
+		if($c) echo '<em style="color:green">'.$c.' '.T_('PDF files').'</em>';
+		else echo '<em style="color:red">'.T_('No result').'</em>';
 		break;
 		// ********************************************************************************************
 		case 'delete':
-		if(file_exists('../../data/_pdf_creator/'.$_POST['nom'].'.json') && unlink('../../data/_pdf_creator/'.$_POST['nom'].'.json')) echo _('Deleted');
-		else echo '!'._('Error');
+		if(file_exists('../../data/_pdf_creator/'.$_POST['nom'].'.json') && unlink('../../data/_pdf_creator/'.$_POST['nom'].'.json')) echo T_('Deleted');
+		else echo '!'.T_('Error');
 		clearstatcache();
 		break;
 		// ********************************************************************************************
@@ -452,11 +453,11 @@ if (isset($_POST['action']))
 			// S: return the document as a string. filename is ignored.
 			if(file_exists('../../../files/'.$n.'_'.$_POST['comp'].'.pdf')) unlink('../../../files/'.$n.'_'.$_POST['comp'].'.pdf');
 			$mpdf->Output('../../../files/'.$n.'_'.$_POST['comp'].'.pdf','F');
-			if(file_exists('../../../files/'.$n.'_'.$_POST['comp'].'.pdf')) echo _('PDF Created');
-			else echo '!'._('Impossible');
+			if(file_exists('../../../files/'.$n.'_'.$_POST['comp'].'.pdf')) echo T_('PDF Created');
+			else echo '!'.T_('Impossible');
 			exit;
 			}
-		echo '!'._('no data');
+		echo '!'.T_('no data');
 		break;
 		// ********************************************************************************************
 		}
