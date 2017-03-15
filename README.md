@@ -31,5 +31,6 @@ Use [Mpdf](http://www.mpdf1.com/mpdf/index.php)
 
 ### Versions ###
 
+* 1.1.1 - 15/03/2017 : Fix issue when unknow lang
 * 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext
 * 1.0 - 07/03/2016 : First stable version

@@ -2,20 +2,285 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CmsUno\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-18 11:38+0100\n"
-"PO-Revision-Date: 2015-08-18 11:39+0100\n"
-"Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
+"POT-Creation-Date: 2017-03-15 19:34+0100\n"
+"PO-Revision-Date: 2017-03-15 19:34+0100\n"
+"Last-Translator: malgrange <jacques.malgrange@gmail.com>\n"
 "Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
-"Language: \n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-\tmsgstr-Bugs-To: \n"
 "Report-\t\tmsgstr-Bugs-To: \n"
-"X-Poedit-KeywordsList: _\n"
+"X-Poedit-KeywordsList: _;T_\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
-"X-Poedit-Language: Spanish\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: ../../..\n"
 
+#: ../../../pdf_creator.php:18 ../../../pdf_creator.php:180
+#: ../../../pdf_creator.php:213
+#, fuzzy
+msgid "Send"
+msgstr "Enviar"
+
+#: ../../../pdf_creator.php:19
+#, fuzzy
+msgid "Config"
+msgstr "Configure"
+
+#: ../../../pdf_creator.php:20
+msgid "Creation"
+msgstr ""
+
+#: ../../../pdf_creator.php:23
+msgid ""
+"This plugin allows you to create PDF files from the HTML Editor. Output will "
+"be directly in the file manager."
+msgstr ""
+
+#: ../../../pdf_creator.php:24
+msgid ""
+"You can insert small text content (name, date...) in the 3 part of the page "
+"(head, content and footer) by adding the shortcode [[name-of-the-small-"
+"content]] at the right place."
+msgstr ""
+
+#: ../../../pdf_creator.php:25
+msgid "This plugin is not active in the site creation."
+msgstr ""
+
+#: ../../../pdf_creator.php:26
+msgid "Creation :"
+msgstr ""
+
+#: ../../../pdf_creator.php:29
+msgid "Existing files"
+msgstr ""
+
+#: ../../../pdf_creator.php:33
+msgid "Open"
+msgstr ""
+
+#: ../../../pdf_creator.php:37 ../../../pdf_creator.php:40
+msgid "Create new file"
+msgstr ""
+
+#: ../../../pdf_creator.php:40
+#, fuzzy
+msgid "Create"
+msgstr "Crear"
+
+#: ../../../pdf_creator.php:44
+msgid "Name of the field"
+msgstr ""
+
+#: ../../../pdf_creator.php:47
+msgid "Add the field"
+msgstr ""
+
+#: ../../../pdf_creator.php:47
+#, fuzzy
+msgid "Add"
+msgstr "Añadir"
+
+#: ../../../pdf_creator.php:51
+msgid "Existing fields :"
+msgstr ""
+
+#: ../../../pdf_creator.php:55
+#, fuzzy
+msgid "Delete"
+msgstr "Borrar"
+
+#: ../../../pdf_creator.php:56 ../../../pdf_creator.php:175
+#, fuzzy
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: ../../../pdf_creator.php:56 ../../../pdf_creator.php:175
+#, fuzzy
+msgid "Save"
+msgstr "Guardar"
+
+#: ../../../pdf_creator.php:59 ../../../pdf_creator.php:190
+msgid "File name add"
+msgstr ""
+
+#: ../../../pdf_creator.php:61
+msgid "Create PDF"
+msgstr ""
+
+#: ../../../pdf_creator.php:66
+#, fuzzy
+msgid "Options"
+msgstr "Opciones :"
+
+#: ../../../pdf_creator.php:69
+#, fuzzy
+msgid "Size"
+msgstr "Tamaño de los dos modelos"
+
+#: ../../../pdf_creator.php:72 ../../../pdf_creator.php:102
+#: ../../../pdf_creator.php:118
+msgid "Default"
+msgstr ""
+
+#: ../../../pdf_creator.php:86
+msgid "Output Page Size."
+msgstr ""
+
+#: ../../../pdf_creator.php:89
+msgid "Format"
+msgstr ""
+
+#: ../../../pdf_creator.php:92
+msgid "Portrait"
+msgstr ""
+
+#: ../../../pdf_creator.php:93
+msgid "Landscape"
+msgstr ""
+
+#: ../../../pdf_creator.php:96
+msgid "Output Page Format : Portrait or Landscape."
+msgstr ""
+
+#: ../../../pdf_creator.php:99 ../../../pdf_creator.php:112
+msgid "Font Family"
+msgstr ""
+
+#: ../../../pdf_creator.php:115 ../../../pdf_creator.php:130
+msgid "Font Size"
+msgstr ""
+
+#: ../../../pdf_creator.php:133
+msgid "Margin left"
+msgstr ""
+
+#: ../../../pdf_creator.php:137 ../../../pdf_creator.php:144
+#: ../../../pdf_creator.php:151 ../../../pdf_creator.php:158
+#: ../../../pdf_creator.php:165 ../../../pdf_creator.php:172
+msgid "Empty => default"
+msgstr ""
+
+#: ../../../pdf_creator.php:140
+msgid "Margin right"
+msgstr ""
+
+#: ../../../pdf_creator.php:147
+msgid "Margin top"
+msgstr ""
+
+#: ../../../pdf_creator.php:154
+msgid "Margin bottom"
+msgstr ""
+
+#: ../../../pdf_creator.php:161
+msgid "Margin head"
+msgstr ""
+
+#: ../../../pdf_creator.php:168
+msgid "Margin foot"
+msgstr ""
+
+#: ../../../pdf_creator.php:179
+msgid ""
+"Send the PDF created to an email address. They should have the same file "
+"name add."
+msgstr ""
+
+#: ../../../pdf_creator.php:183
+#, fuzzy
+msgid "Email"
+msgstr "Email"
+
+#: ../../../pdf_creator.php:187
+msgid "Recipient's email address"
+msgstr ""
+
+#: ../../../pdf_creator.php:193
+#, fuzzy
+msgid "Check"
+msgstr ""
+"Si su anfitrión no es SHA2, es probable que tenga que comprobar esta opción "
+"insegura."
+
+#: ../../../pdf_creator.php:196
+msgid "The PDF will be selected with this add to the file name"
+msgstr ""
+
+#: ../../../pdf_creator.php:199
+msgid "Email subject"
+msgstr ""
+
+#: ../../../pdf_creator.php:203
+msgid "Subject for the email"
+msgstr ""
+
+#: ../../../pdf_creator.php:206
+msgid "Email content"
+msgstr ""
+
+#: ../../../pdf_creator.php:210
+msgid "Content for the email"
+msgstr ""
+
+#: ../../../pdf_creator.php:251
+#, fuzzy
+msgid "New"
+msgstr "Crear nueva página"
+
+#: ../../../pdf_creator.php:258 ../../../pdf_creator.php:363
+#: ../../../pdf_creator.php:365 ../../../pdf_creator.php:382
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: ../../../pdf_creator.php:279 ../../../pdf_creator.php:289
+#, fuzzy
+msgid "Backup performed"
+msgstr "Copia de seguridad realizada"
+
+#: ../../../pdf_creator.php:280 ../../../pdf_creator.php:290
+#, fuzzy
+msgid "Impossible backup"
+msgstr "Copia de seguridad Imposible"
+
+#: ../../../pdf_creator.php:336
+msgid "Email sent to"
+msgstr ""
+
+#: ../../../pdf_creator.php:359
+msgid "Email sent"
+msgstr ""
+
+#: ../../../pdf_creator.php:360
+msgid "Failed to send"
+msgstr ""
+
+#: ../../../pdf_creator.php:376
+msgid "PDF files"
+msgstr ""
+
+#: ../../../pdf_creator.php:377
+msgid "No result"
+msgstr ""
+
+#: ../../../pdf_creator.php:381
+#, fuzzy
+msgid "Deleted"
+msgstr "Suprimido"
+
+#: ../../../pdf_creator.php:456
+msgid "PDF Created"
+msgstr ""
+
+#: ../../../pdf_creator.php:457
+msgid "Impossible"
+msgstr ""
+
+#: ../../../pdf_creator.php:460
+#, fuzzy
+msgid "no data"
+msgstr "Sin datos"
