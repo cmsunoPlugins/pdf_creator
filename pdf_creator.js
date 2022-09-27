@@ -73,6 +73,7 @@ function f_makepdf_pdfc(f,g){
 function f_add_pdfc(f){ // T
 	a=document.getElementById('curPdfc');
 	b=document.createElement('tr');
+	b.className="pdfTrTxt";
 	c=document.createElement('td');
 	f=f.replace(/[^\w]/gi, '');
 	c.innerHTML=f;
@@ -102,18 +103,21 @@ function f_create_pdfc(f){ // E
 	//
 	a=document.getElementById('curPdfc');
 	b=document.createElement('tr');
+	b.className="pdfTrEd";
 	c=document.createElement('td');f=f.replace(/[^\w]/gi, '');c.innerHTML=f+' head';c.style.width='110px';c.style.verticalAlign='middle';c.style.paddingLeft='40px';b.appendChild(c);
 	c=document.createElement('td');d=document.createElement('textarea');d.name='E'+f+'head';d.style.width='100%';c.appendChild(d);b.appendChild(c);
 	c=document.createElement('td');c.style.backgroundImage='url('+Udep+'includes/img/close.png)';c.style.backgroundPosition='center center';c.style.backgroundRepeat='no-repeat';c.style.cursor='pointer';c.width='30px';c.onclick=function(){this.parentNode.parentNode.removeChild(this.parentNode);}
 	b.appendChild(c);a.appendChild(b);
 	CKEDITOR.replace('E'+f+'head',{height:'300'});
 	b=document.createElement('tr');
+	b.className="pdfTrEd";
 	c=document.createElement('td');f=f.replace(/[^\w]/gi, '');c.innerHTML=f;c.style.width='110px';c.style.verticalAlign='middle';c.style.paddingLeft='40px';b.appendChild(c);
 	c=document.createElement('td');d=document.createElement('textarea');d.name='E'+f;d.style.width='100%';c.appendChild(d);b.appendChild(c);
 	c=document.createElement('td');c.style.backgroundImage='url('+Udep+'includes/img/close.png)';c.style.backgroundPosition='center center';c.style.backgroundRepeat='no-repeat';c.style.cursor='pointer';c.width='30px';c.onclick=function(){this.parentNode.parentNode.removeChild(this.parentNode);}
 	b.appendChild(c);a.appendChild(b);
 	CKEDITOR.replace('E'+f,{height:'300'});
 	b=document.createElement('tr');
+	b.className="pdfTrEd";
 	c=document.createElement('td');f=f.replace(/[^\w]/gi, '');c.innerHTML=f+' foot';c.style.width='110px';c.style.verticalAlign='middle';c.style.paddingLeft='40px';b.appendChild(c);
 	c=document.createElement('td');d=document.createElement('textarea');d.name='E'+f+'foot';d.style.width='100%';c.appendChild(d);b.appendChild(c);
 	c=document.createElement('td');c.style.backgroundImage='url('+Udep+'includes/img/close.png)';c.style.backgroundPosition='center center';c.style.backgroundRepeat='no-repeat';c.style.cursor='pointer';c.width='30px';c.onclick=function(){this.parentNode.parentNode.removeChild(this.parentNode);}
@@ -139,11 +143,11 @@ function f_load_pdfc(f){
 			}
 			if(data.nom!='_new_'&&typeof data.pdfc!=='undefined'){
 				jQuery.each(data.pdfc,function(k,d){
-					if(d.t=='T')jQuery('#curPdfc').append('<tr><td style="width:100px;vertical-align:middle;padding-left:40px;">'+d.n+'<br />[['+d.n.replace(/[^a-z0-9]/gi,'')+']]</td><td style="'+(d.t=='E'?'padding-bottom:10px;padding-top:10px':'padding-right:8px;')+'"><textarea style="width:100%;" name="'+d.t+d.n+'">'+d.b+'</textarea></td><td width="30px" style="cursor:pointer;background:transparent url(\''+Udep+'includes/img/close.png\') no-repeat scroll center center;" onClick="this.parentNode.parentNode.removeChild(this.parentNode);"></td></tr>');
+					if(d.t=='T')jQuery('#curPdfc').append('<tr class="pdfTrTxt"><td style="width:100px;vertical-align:middle;padding-left:40px;">'+d.n+'<br />[['+d.n.replace(/[^a-z0-9]/gi,'')+']]</td><td style="'+(d.t=='E'?'padding-bottom:10px;padding-top:10px':'padding-right:8px;')+'"><textarea style="width:100%;" name="'+d.t+d.n+'">'+d.b+'</textarea></td><td width="30px" style="cursor:pointer;background:transparent url(\''+Udep+'includes/img/close.png\') no-repeat scroll center center;" onClick="this.parentNode.parentNode.removeChild(this.parentNode);"></td></tr>');
 				});
 				jQuery.each(data.pdfc,function(k,d){
 					if(d.t=='E'){
-						jQuery('#curPdfc').append('<tr><td style="width:100px;vertical-align:middle;padding-left:40px;">'+d.n+'</td><td style="'+(d.t=='E'?'padding-bottom:10px;padding-top:10px':'padding-right:8px;')+'"><textarea style="width:100%;" name="'+d.t+d.n+'">'+d.b+'</textarea></td><td width="30px" style="cursor:pointer;background:transparent url(\''+Udep+'includes/img/close.png\') no-repeat scroll center center;" onClick="this.parentNode.parentNode.removeChild(this.parentNode);"></td></tr>');
+						jQuery('#curPdfc').append('<tr class="pdfTrEd"><td style="width:100px;vertical-align:middle;padding-left:40px;">'+d.n+'</td><td style="'+(d.t=='E'?'padding-bottom:10px;padding-top:10px':'padding-right:8px;')+'"><textarea style="width:100%;" name="'+d.t+d.n+'">'+d.b+'</textarea></td><td width="30px" style="cursor:pointer;background:transparent url(\''+Udep+'includes/img/close.png\') no-repeat scroll center center;" onClick="this.parentNode.parentNode.removeChild(this.parentNode);"></td></tr>');
 						CKEDITOR.replace(d.t+d.n,{height:'300'});
 					}
 				});

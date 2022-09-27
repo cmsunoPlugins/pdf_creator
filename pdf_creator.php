@@ -14,6 +14,7 @@ if (isset($_POST['action']))
 		{
 		// ********************************************************************************************
 		case 'plugin': ?>
+		<link rel="stylesheet" type="text/css" media="screen" href="uno/plugins/pdf_creator/pdf_creator.css" />
 		<div class="blocForm">
 			<div id="pdfcC" class="bouton fr" onClick="f_pdfcC();" title="<?php echo T_("Send");?>"><?php echo T_("Send");?></div>
 			<div id="pdfcB" class="bouton fr" onClick="f_pdfcB();" title="<?php echo T_("Config");?>"><?php echo T_("Config");?></div>

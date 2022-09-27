@@ -25,12 +25,13 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
 
 Create PDF from CKEditor content. Custom Shortcode (name, phone...) to save time. Numerous options (page format, font, margin...). Very Usefull.
 
-Use [Mpdf](http://www.mpdf1.com/mpdf/index.php)
+Use [Mpdf](https://mpdf.github.io/)
 
 [CMSUno](https://github.com/boiteasite/cmsuno)
 
 ### Versions ###
 
-* 1.1.1 - 15/03/2017 : Fix issue when unknow lang
-* 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext
-* 1.0 - 07/03/2016 : First stable version
+* 1.1.2 - 27/09/2022 : Responsive display.
+* 1.1.1 - 15/03/2017 : Fix issue when unknow lang.
+* 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext.
+* 1.0 - 07/03/2016 : First stable version.

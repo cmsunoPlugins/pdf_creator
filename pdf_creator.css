@@ -1,0 +1,6 @@
+#curPdfc tr.pdfTrEd{padding-top:10px;margin-top:10px;border-top:1px solid #888;}
+@media screen and (max-width:780px){
+	#curPdfc tr.pdfTrEd,#curPdfc tr.pdfTrTxt{display:block;margin-bottom:10px;}
+	#curPdfc tr.pdfTrEd td:nth-child(2),#curPdfc tr.pdfTrTxt td:nth-child(2){display:block;text-align:left;width:100%;}
+	#curPdfc tr.pdfTrEd td:nth-child(3),#curPdfc tr.pdfTrTxt td:nth-child(3){height:30px;}
+}
